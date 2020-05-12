@@ -7,7 +7,7 @@ module.exports = {
     },
     async create(req, res, next) {
         try {
-            const { username } = req.body
+            const { username } = req.body;
 
             await knex('users').insert({
                 username
